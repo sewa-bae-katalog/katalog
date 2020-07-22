@@ -119,7 +119,7 @@
                
                 $.ajax({
                         type: 'GET',
-                        url: 'http://kel05.if05a.xyz/api/barang/kode/' + kode,
+                        url: 'https://kel05.if05a.xyz/api/barang/kode/' + kode,
                         beforeSend: function (xhr) {
                             xhr.overrideMimeType("text/plain; charset=x-user-defined");
                         },
@@ -148,12 +148,12 @@
         
         $(document).ready(function () {
 
-            getBarang('http://kel05.if05a.xyz/api/barang');
+            getBarang('https://kel05.if05a.xyz/api/barang');
 
             $('.form-search').keyup(function() {
                 let keyword = $(this).val();
     
-                getBarang('http://kel05.if05a.xyz/api/barang/search/'+keyword,'Search')
+                getBarang('https://kel05.if05a.xyz/api/barang/search/'+keyword,'Search')
             });
             
         });
