@@ -119,7 +119,7 @@
                
                 $.ajax({
                         type: 'GET',
-                        url: 'http://127.0.0.1:8000/api/barang/kode/' + kode,
+                        url: 'http://kel05.if05a.xyz/api/barang/kode/' + kode,
                         beforeSend: function (xhr) {
                             xhr.overrideMimeType("text/plain; charset=x-user-defined");
                         },
@@ -148,12 +148,12 @@
         
         $(document).ready(function () {
 
-            getBarang('http://127.0.0.1:8000/api/barang');
+            getBarang('http://kel05.if05a.xyz/api/barang');
 
             $('.form-search').keyup(function() {
                 let keyword = $(this).val();
     
-                getBarang('http://127.0.0.1:8000/api/barang/search/'+keyword,'Search')
+                getBarang('http://kel05.if05a.xyz/api/barang/search/'+keyword,'Search')
             });
             
         });
